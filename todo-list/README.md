@@ -5,7 +5,7 @@ A To-do List application built with React and Vite. Get It Done allows me/users 
 clone the repo and install the dependencies:
 ```bash
 git clone https://github.com/SemharTes/todo-list.git
-cd <project-folder >
+cd <project-folder>
 npm install
 ```
 
