@@ -6,13 +6,13 @@ function TodoForm({ onAddTodo }) {
 
   const handleAddTodo = (event) => {
     event.preventDefault();
-
-    if (workingTodoTitle) {
+    if (workingTodoTitle.trim()) {
       onAddTodo(workingTodoTitle);
       setWorkingTodoTitle("");
       inputRef.current.focus();
     }
   };
+
   return (
     <form onSubmit={handleAddTodo}>
       <label htmlFor="todoTitle">Todo</label>
