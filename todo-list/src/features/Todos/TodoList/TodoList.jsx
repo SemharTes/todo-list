@@ -9,7 +9,7 @@ function TodoList({ todoList, onCompleteTodo, onUpdateTodo, dataVersion }) {
     };
   }, [todoList, dataVersion]);
 
-  return filteredTodoList.length === 0 ? (
+  return filteredTodoList.todos.length === 0 ? (
     <p>Add todo above to get started</p>
   ) : (
     <ul>
